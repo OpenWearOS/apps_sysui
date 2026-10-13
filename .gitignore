@@ -1,0 +1,11 @@
+.gradle
+.kotlin
+.idea
+.settings
+.project
+
+build
+app/libs
+
+local.properties
+

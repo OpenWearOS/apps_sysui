@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.PositionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quickactions_position_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/quicksettings_open_a11y"/>

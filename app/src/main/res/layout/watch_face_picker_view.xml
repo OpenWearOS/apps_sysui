@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.module.watchfacepicker2.WatchFacePickerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wfp2_managementui_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/management_ui_root_layout"/>
+</io.github.openwearos.sysui.ui.module.watchfacepicker2.WatchFacePickerView>

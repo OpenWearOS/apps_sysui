@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="12dp"
+    android:width="7dp"
+    android:viewportWidth="7"
+    android:viewportHeight="12">
+    <path
+        android:fillColor="?attr/chargingOverlayLightningIconColor"
+        android:pathData="M6.72,5.6529C6.72,5.5498 6.6469,5.4673 6.5539,5.4536H6.4941H4.1883V0.9232C4.1816,0.7445 4.0421,0.6001 3.8626,0.6001C3.743,0.6001 3.6367,0.662 3.5769,0.772L0.7993,5.9279L0.6266,6.251C0.6066,6.2854 0.6,6.3198 0.6,6.3541C0.6,6.4573 0.6731,6.5398 0.7661,6.5535H0.8259H3.1317V11.0564V11.077C3.1384,11.2626 3.2779,11.4001 3.4573,11.4001C3.5769,11.4001 3.6832,11.3382 3.743,11.2282L6.5273,6.0585L6.6934,5.7561C6.7133,5.7217 6.72,5.6873 6.72,5.6529Z"/>
+</vector>

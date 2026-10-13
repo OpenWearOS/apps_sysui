@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.experiences.calendar.uiv2.SingleEventView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/list_view_background_gradient"
+    android:padding="@dimen/agenda_list_event_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground">
+    <io.github.openwearos.sysui.ui.experiences.calendar.uiv2.EventTimeView
+        android:id="@+id/event_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+        android:ellipsize="end"
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        style="@style/AgendaText.EventText.Title"/>
+    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+        android:ellipsize="end"
+        android:id="@+id/event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_view_event_location_margin_top"
+        android:maxLines="1"
+        style="@style/AgendaText.EventText.Location"/>
+    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+        android:gravity="center"
+        android:id="@+id/no_events_title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/agenda_no_single_day_event"
+        style="@style/AgendaText.EventText.Title.NoEvents"/>
+</io.github.openwearos.sysui.ui.experiences.calendar.uiv2.SingleEventView>

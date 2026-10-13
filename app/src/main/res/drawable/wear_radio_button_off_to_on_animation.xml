@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ic_wear_radio_button_on">
+    <target
+        android:name="inner_circle"
+        android:animation="@drawable/_wear_radio_button_off_to_on_animation__0_res_0x7f080052"/>
+    <target
+        android:name="inner_circle_group"
+        android:animation="@drawable/_wear_radio_button_off_to_on_animation__1_res_0x7f080053"/>
+    <target
+        android:name="outer_circle"
+        android:animation="@drawable/_wear_radio_button_off_to_on_animation__2_res_0x7f080054"/>
+</animated-vector>

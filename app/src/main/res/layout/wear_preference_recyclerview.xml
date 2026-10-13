@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.FadingWearableRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:bottomPaddingPercent="@dimen/wear_preference_fragment_bottom_padding_percent"
+    app:centerEdgeItems="true"
+    app:topPaddingPercent="@dimen/wear_preference_fragment_top_padding_percent">
+    <requestFocus/>
+</io.github.openwearos.sysui.ui.FadingWearableRecyclerView>

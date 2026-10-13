@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="config_dynamic_colors_supported">false</bool>
+    <bool name="config_enable_media_ambiactive">false</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="config_watchface_privacy_icons_enabled">true</bool>
+    <bool name="device_tutorial_enabled">true</bool>
+    <bool name="isLeftToRightLocale">true</bool>
+    <bool name="run_gaze_detection">true</bool>
+    <bool name="sysui_agenda_deprecated">false</bool>
+</resources>

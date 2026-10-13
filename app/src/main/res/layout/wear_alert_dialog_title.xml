@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/wear_alertdialog_title_text"
+    android:duplicateParentState="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/wear_alertdialog_title_padding_horizontal"
+    style="?attr/textStyleWearTitle3"/>

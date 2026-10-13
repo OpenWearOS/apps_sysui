@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.PositionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carousel_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:translationZ="-1px"/>
+    <io.github.openwearos.sysui.ui.module.carousel.label.CarouselLabelView
+        android:id="@+id/carousel_label"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="1px"/>
+</io.github.openwearos.sysui.ui.PositionLayout>

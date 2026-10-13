@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.experiences.calendar.uiv2.SingleDayView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/single_day_view_v2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+        android:gravity="center"
+        android:id="@+id/first_day_header"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/agenda_list_header_margin_top"
+        android:layout_marginBottom="@dimen/agenda_list_header_margin_bottom"
+        style="@style/AgendaText.EventText.Header"/>
+    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+        android:gravity="center"
+        android:id="@+id/day_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_view_single_day_day_header_height"
+        android:layout_marginTop="@dimen/list_view_single_day_day_header_margin_top"
+        android:layout_marginBottom="@dimen/list_view_single_day_day_header_margin_bottom"
+        style="@style/AgendaText.EventText.Header"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/day_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_view_events_divider"
+        android:showDividers="middle"/>
+</io.github.openwearos.sysui.ui.experiences.calendar.uiv2.SingleDayView>

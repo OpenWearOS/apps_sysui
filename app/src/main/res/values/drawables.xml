@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="default_background">@drawable/media_background_default</drawable>
+    <drawable name="ic_apps_vector">@drawable/quantum_ic_apps_vd_theme_24</drawable>
+    <drawable name="ic_brightness">@drawable/ic_brightness_30</drawable>
+    <drawable name="ic_calendar_vector">@drawable/quantum_ic_calendar_today_vd_theme_24</drawable>
+    <drawable name="ic_current_time_vector">@drawable/quantum_ic_watch_later_vd_theme_24</drawable>
+    <drawable name="ic_dnd">@drawable/ic_gm_remove_circle_24</drawable>
+    <drawable name="ic_find_my_phone">@drawable/ic_find_my_phone_ring</drawable>
+    <drawable name="ic_media_next">@drawable/ic_media_next_default</drawable>
+    <drawable name="ic_media_play">@drawable/ic_media_play_default</drawable>
+    <drawable name="ic_no_artwork">@drawable/ic_now_playing</drawable>
+    <drawable name="ic_settings">@drawable/ic_gm_settings_24</drawable>
+    <drawable name="quickactions_airplanemode_button">@drawable/quantum_ic_airplanemode_active_white_24</drawable>
+    <drawable name="quickactions_batterysaver_button">@drawable/default_quickactions_ic_batterysaver</drawable>
+    <drawable name="quickactions_brightness_button">@drawable/quantum_gm_ic_light_mode_vd_theme_24</drawable>
+    <drawable name="quickactions_do_not_disturb_button">@drawable/quantum_ic_do_not_disturb_on_white_24</drawable>
+    <drawable name="quickactions_find_my_phone_button">@drawable/quantum_gm_ic_phonelink_ring_vd_theme_24</drawable>
+    <drawable name="quickactions_flashlight_button">@drawable/quantum_gm_ic_flashlight_on_vd_theme_24</drawable>
+    <drawable name="quickactions_payment_button">@drawable/quantum_ic_credit_card_vd_theme_24</drawable>
+    <drawable name="quickactions_settings_button">@drawable/quantum_gm_ic_settings_vd_theme_24</drawable>
+    <drawable name="quickactions_sound_button">@drawable/quantum_gm_ic_notifications_vd_theme_24</drawable>
+    <drawable name="quickactions_theatermode_button">@drawable/quantum_gm_ic_theaters_vd_theme_24</drawable>
+    <drawable name="quickactions_touchlock_button">@drawable/default_quickactions_ic_touchlock</drawable>
+</resources>

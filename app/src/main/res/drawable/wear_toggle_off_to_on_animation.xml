@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ic_wear_toggle_on">
+    <target
+        android:name="thumb_selected"
+        android:animation="@drawable/_wear_toggle_off_to_on_animation__0_res_0x7f08005f"/>
+    <target
+        android:name="thumb_selected_group"
+        android:animation="@drawable/_wear_toggle_off_to_on_animation__1_res_0x7f080060"/>
+    <target
+        android:name="toggle_bar"
+        android:animation="@drawable/_wear_toggle_off_to_on_animation__2_res_0x7f080061"/>
+    <target
+        android:name="toggle_white_flash"
+        android:animation="@drawable/_wear_toggle_off_to_on_animation__3_res_0x7f080062"/>
+</animated-vector>

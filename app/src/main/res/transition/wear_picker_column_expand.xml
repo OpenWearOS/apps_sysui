@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:transitionOrdering="together">
+    <fade
+        android:duration="@integer/wear_picker_position_anim_long_duration_ms"
+        android:fadingMode="fade_out">
+        <targets>
+            <target android:targetId="@+id/wear_picker_column_label"/>
+        </targets>
+    </fade>
+</transitionSet>
