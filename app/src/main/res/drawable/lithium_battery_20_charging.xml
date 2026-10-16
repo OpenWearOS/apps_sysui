@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="10dp"
+    android:width="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="10">
+    <path
+        android:fillColor="?attr/batteryButtonIconColor"
+        android:pathData="M4,1H19C19.5523,1 20,1.4477 20,2V8C20,8.5523 19.5523,9 19,9H4C3.4477,9 3,8.5523 3,8V2C3,1.4477 3.4477,1 4,1ZM2,2C2,0.8954 2.8954,0 4,0H19C20.1046,0 21,0.8954 21,2V8C21,9.1046 20.1046,10 19,10H4C2.8954,10 2,9.1046 2,8V7H1C0.4477,7 0,6.5523 0,6V4C0,3.4477 0.4477,3 1,3H2V2Z"
+        android:strokeAlpha="0.65"
+        android:fillAlpha="0.65"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="?attr/batteryButtonIconColor"
+        android:pathData="M17.75,2L18.25,2A0.75,0.75 0,0 1,19 2.75L19,7.25A0.75,0.75 0,0 1,18.25 8L17.75,8A0.75,0.75 0,0 1,17 7.25L17,2.75A0.75,0.75 0,0 1,17.75 2z"/>
+    <path
+        android:fillColor="?attr/batteryButtonIconColor"
+        android:pathData="M11.2107,2.5455C11.1248,2.5455 11.056,2.6041 11.0446,2.6788L11.0446,2.7267L11.0446,4.5763L7.2693,4.5763C7.1203,4.5816 7,4.6936 7,4.8375C7,4.9334 7.0516,5.0187 7.1432,5.0667L11.4398,7.2947L11.7091,7.4333C11.7377,7.4493 11.7664,7.4546 11.795,7.4546C11.881,7.4546 11.9497,7.396 11.9612,7.3213L11.9612,7.2734L11.9612,5.4238L15.7136,5.4238L15.7307,5.4238C15.8854,5.4185 16,5.3065 16,5.1626C16,5.0667 15.9484,4.9814 15.8568,4.9334L11.5487,2.7001L11.2966,2.5668C11.268,2.5508 11.2393,2.5455 11.2107,2.5455Z"/>
+</vector>

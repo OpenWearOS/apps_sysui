@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/wear_chip_button_background_solid"/>
+    <item
+        android:id="@+id/wear_chip_start_accent"
+        android:drawable="@drawable/wear_chip_button_background_gradient_start"/>
+    <item
+        android:id="@+id/wear_chip_start_accent_rtl"
+        android:drawable="@drawable/wear_chip_button_background_gradient_start_rtl"/>
+    <item
+        android:id="@+id/wear_chip_end_accent"
+        android:drawable="@drawable/wear_chip_button_background_gradient_end"/>
+    <item
+        android:id="@+id/wear_chip_end_accent_rtl"
+        android:drawable="@drawable/wear_chip_button_background_gradient_end_rtl"/>
+</layer-list>

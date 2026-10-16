@@ -13,14 +13,12 @@
     <ImageView
         android:id="@+id/button_tip_screen_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/button_tip_screen_animation" />
+        android:layout_height="match_parent" />
 
     <ImageView
         android:id="@+id/button_tip_press_animation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/button_tip_press_animation" />
+        android:layout_height="match_parent" />
 
     <FrameLayout
         android:id="@+id/button_tip_static_button_layers"

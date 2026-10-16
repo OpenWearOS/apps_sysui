@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:interpolator="@android:interpolator/fast_out_slow_in"
+            android:duration="166"
+            android:valueFrom="0.75"
+            android:valueTo="1"
+            android:valueType="floatType"
+            android:propertyName="scaleX"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_down_long_animation_interpolator_2"
+            android:duration="516"
+            android:valueFrom="1"
+            android:valueTo="1"
+            android:valueType="floatType"
+            android:propertyName="scaleX"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_down_long_animation_interpolator_0"
+            android:duration="750"
+            android:valueFrom="1"
+            android:valueTo="1"
+            android:valueType="floatType"
+            android:propertyName="scaleX"/>
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:interpolator="@android:interpolator/fast_out_slow_in"
+            android:duration="166"
+            android:valueFrom="0.75"
+            android:valueTo="1"
+            android:valueType="floatType"
+            android:propertyName="scaleY"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_down_long_animation_interpolator_2"
+            android:duration="516"
+            android:valueFrom="1"
+            android:valueTo="1"
+            android:valueType="floatType"
+            android:propertyName="scaleY"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_down_long_animation_interpolator_0"
+            android:duration="750"
+            android:valueFrom="1"
+            android:valueTo="1"
+            android:valueType="floatType"
+            android:propertyName="scaleY"/>
+    </set>
+</set>

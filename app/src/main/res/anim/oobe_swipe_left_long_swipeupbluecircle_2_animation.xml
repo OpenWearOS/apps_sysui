@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_left_long_animation_interpolator_11"
+            android:duration="683"
+            android:valueFrom="202.575"
+            android:valueTo="149.6567"
+            android:valueType="floatType"
+            android:propertyName="translateX"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_left_long_animation_interpolator_4"
+            android:duration="750"
+            android:valueFrom="149.6567"
+            android:valueTo="87.1567"
+            android:valueType="floatType"
+            android:propertyName="translateX"/>
+    </set>
+</set>

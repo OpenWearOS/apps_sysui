@@ -27,7 +27,7 @@ final class WatchFacePane extends Pane {
 	WatchFacePane(Context c) {
 		super(c);
 		mArc = new BatteryArc(c);
-		addView(mArc, new LayoutParams(Ui.MP, Ui.MP));
+		addView(mArc, new LinearLayout.LayoutParams(Ui.MP, Ui.MP));
 
 		LinearLayout column = new LinearLayout(c);
 		column.setOrientation(LinearLayout.VERTICAL);

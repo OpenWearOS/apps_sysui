@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@anim/wear_selection_easing_incoming_80"
+        android:duration="@integer/wear_radio_button_color_anim_duration_ms"
+        android:startOffset="@integer/wear_radio_button_size_anim_offset_ms"
+        android:valueFrom="?attr/wearSelectionColorSelected"
+        android:valueTo="?attr/wearSelectionColorUnselected"
+        android:valueType="colorType"
+        android:propertyName="fillColor"/>
+</set>

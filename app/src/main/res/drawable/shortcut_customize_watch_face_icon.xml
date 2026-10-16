@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:demoButtonKeyCode="@integer/key_code_none"
+    app:screenContent="@drawable/ic_customize_watch_face_tip_screen"
+    app:tutorialShortcutPressAction="NO_PRESS"
+    class="com.google.android.clockwork.sysui.common.hintoverlay.tutorialoverlays.ButtonShortcutDrawable"/>

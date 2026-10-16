@@ -3,11 +3,10 @@ package io.github.openwearos.sysui.ui;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.view.Gravity;
-import android.widget.TextView;
 
 import io.github.openwearos.sysui.R;
 
-final class QsTile extends TextView {
+final class QsTile extends androidx.appcompat.widget.AppCompatTextView {
 	private final String mLabel;
 
 	QsTile(Context context, int labelRes, int iconRes, Runnable onTap) {

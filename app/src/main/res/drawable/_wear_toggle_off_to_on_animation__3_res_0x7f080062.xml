@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@anim/wear_selection_easing_outgoing_40_incoming_80"
+        android:duration="@integer/wear_toggle_color_anim_duration_ms"
+        android:valueFrom="0"
+        android:valueTo="0.2"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+    <objectAnimator
+        android:interpolator="@anim/wear_selection_easing_outgoing_25_incoming_25"
+        android:duration="@integer/wear_toggle_alpha_anim_duration_ms"
+        android:startOffset="@integer/wear_toggle_anim_duration_offset_ms"
+        android:valueFrom="0.2"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

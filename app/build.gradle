@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'io.github.openwearos.sysui'
-    compileSdk 36
+    compileSdk 37
 
     defaultConfig {
         applicationId 'io.github.openwearos.sysui'

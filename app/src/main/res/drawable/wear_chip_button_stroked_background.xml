@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_checked="true"
+        android:drawable="@drawable/wear_chip_button_background_solid"/>
+    <item
+        android:state_enabled="true"
+        android:state_checked="false"
+        android:drawable="@drawable/wear_chip_button_outline"/>
+    <item
+        android:state_enabled="true"
+        android:state_checkable="false"
+        android:drawable="@drawable/wear_chip_button_background_solid"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/wear_chip_button_outline"/>
+</selector>

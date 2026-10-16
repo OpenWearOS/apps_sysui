@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:interpolator="@android:interpolator/linear"
+            android:duration="166"
+            android:valueFrom="M 0.0,-20.5 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218383789 -9.17816162109,20.5 -20.5,20.5 c -11.3218383789,0.0 -20.5,-9.17816162109 -20.5,-20.5 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueTo="M 0.0,-20.5 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218383789 -9.17816162109,20.5 -20.5,20.5 c -11.3218383789,0.0 -20.5,-9.17816162109 -20.5,-20.5 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_right_long_animation_interpolator_3"
+            android:duration="516"
+            android:valueFrom="M 0.0,-20.5 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218383789 -9.17816162109,20.5 -20.5,20.5 c -11.3218383789,0.0 -20.5,-9.17816162109 -20.5,-20.5 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueTo="M 0.0,-54.5659637451 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218536377 -11.1593475342,76.408782959 -20.6393432617,76.4451141357 c -9.2013092041,0.0352630615234 -20.3606567383,-65.123260498 -20.3606567383,-76.4451141357 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_right_long_animation_interpolator_8"
+            android:duration="250"
+            android:valueFrom="M 0.0,-54.5659637451 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218536377 -11.1593475342,76.408782959 -20.6393432617,76.4451141357 c -9.2013092041,0.0352630615234 -20.3606567383,-65.123260498 -20.3606567383,-76.4451141357 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueTo="M 0.0,-54.5659179688 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218383789 -9.17816162109,20.5 -20.5,20.5 c -11.3218383789,0.0 -20.5,-9.17816162109 -20.5,-20.5 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_right_long_animation_interpolator_0"
+            android:duration="500"
+            android:valueFrom="M 0.0,-54.5659179688 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218383789 -9.17816162109,20.5 -20.5,20.5 c -11.3218383789,0.0 -20.5,-9.17816162109 -20.5,-20.5 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueTo="M 0.0,-54.7032775879 c 11.3218383789,0.0 20.5,9.17816162109 20.5,20.5 c 0.0,11.3218383789 -9.17816162109,20.5 -20.5,20.5 c -11.3218383789,0.0 -20.5,-9.17816162109 -20.5,-20.5 c 0.0,-11.3218383789 9.17816162109,-20.5 20.5,-20.5 Z"
+            android:valueType="pathType"
+            android:propertyName="pathData"/>
+    </set>
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:interpolator="@android:interpolator/fast_out_slow_in"
+            android:duration="166"
+            android:valueFrom="0"
+            android:valueTo="0.7"
+            android:valueType="floatType"
+            android:propertyName="fillAlpha"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_right_long_animation_interpolator_2"
+            android:duration="516"
+            android:valueFrom="0.7"
+            android:valueTo="0.7"
+            android:valueType="floatType"
+            android:propertyName="fillAlpha"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_right_long_animation_interpolator_7"
+            android:duration="416"
+            android:valueFrom="0.7"
+            android:valueTo="0"
+            android:valueType="floatType"
+            android:propertyName="fillAlpha"/>
+        <objectAnimator
+            android:interpolator="@interpolator/oobe_swipe_right_long_animation_interpolator_13"
+            android:duration="333"
+            android:valueFrom="0"
+            android:valueTo="0"
+            android:valueType="floatType"
+            android:propertyName="fillAlpha"/>
+    </set>
+</set>

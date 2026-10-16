@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ic_wear_check_box_checked">
+    <target
+        android:name="check_mark"
+        android:animation="@drawable/_wear_check_box_checked_to_unchecked_animation__0_res_0x7f08003c"/>
+    <target
+        android:name="check_mark_clip"
+        android:animation="@drawable/_wear_check_box_checked_to_unchecked_animation__1_res_0x7f08003d"/>
+    <target
+        android:name="outer_box"
+        android:animation="@drawable/_wear_check_box_checked_to_unchecked_animation__2_res_0x7f08003e"/>
+</animated-vector>

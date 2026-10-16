@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    app:spinnerDirection="clockwise"
+    app:spinnerProgressColor="?attr/colorAccent"
+    app:spinnerTrackColor="@color/cw_black_transparent"
+    app:spinnerTrackWidth="4dp"
+    class="com.google.android.clockwork.common.wearable.wearmaterial.progressindicator.ProgressSpinnerDrawable"/>

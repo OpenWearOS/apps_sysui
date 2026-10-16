@@ -26,4 +26,66 @@
     <string name="remote_input_reply">Reply</string>
     <string name="remote_input_keyboard">Keyboard</string>
     <string name="remote_input_voice">Voice</string>
+    <string name="tutorial_last_used_app_button_tip">tutorial_last_used_app_button_tip</string>
+    <string name="tutorial_power_menu_button_tip">tutorial_power_menu_button_tip</string>
+    <string name="first_party_tutorial_last_used_app_button_tip">first_party_tutorial_last_used_app_button_tip</string>
+    <string name="first_party_tutorial_assistant_button_tip">first_party_tutorial_assistant_button_tip</string>
+    <string name="first_party_tutorial_customize_watch_face_tip">first_party_tutorial_customize_watch_face_tip</string>
+    <string name="first_party_tutorial_power_menu_button_tip">first_party_tutorial_power_menu_button_tip</string>
+    <string name="first_party_tutorial_pay_button_tip">first_party_tutorial_pay_button_tip</string>
+    <string name="first_party_tutorial_wallet_button_tip">first_party_tutorial_wallet_button_tip</string>
+    <string name="region_name_africa">Africa</string>
+    <string name="region_name_asia">Asia</string>
+    <string name="region_name_atlantic">Atlantic</string>
+    <string name="region_name_australia">Australia</string>
+    <string name="region_name_europe">Europe</string>
+    <string name="region_name_north_america">North America</string>
+    <string name="region_name_pacific">Pacific</string>
+    <string name="region_name_south_america">South America</string>
+    <string name="region_name_universal">Universal</string>
+
+    <string name="wear_picker_a11y_action_button_accept">Next</string>
+    <string name="wear_picker_a11y_action_button_done">Finish</string>
+    <string name="wear_picker_a11y_action_done">finish</string>
+    <string name="wear_picker_a11y_action_next_column">move to next list</string>
+    <string name="wear_picker_a11y_action_select_item">select</string>
+    <string name="wear_picker_a11y_action_toggle">change</string>
+
+    <string name="wear_material_default_font_family_body1">sans-serif</string>
+    <string name="wear_material_default_font_family_body2">sans-serif</string>
+    <string name="wear_material_default_font_family_body3">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_body4">sans-serif</string>
+    <string name="wear_material_default_font_family_button1">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_button2">sans-serif</string>
+    <string name="wear_material_default_font_family_caption1">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_caption2">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_caption3">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_display1">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_display2">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_display3">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_display4">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_medium">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_title1">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_title2">sans-serif-medium</string>
+    <string name="wear_material_default_font_family_title3">sans-serif-medium</string>
+
+    <string name="wear_material_font_family_body1">google-sans-text</string>
+    <string name="wear_material_font_family_body2">google-sans-text</string>
+    <string name="wear_material_font_family_body3">google-sans-text-medium</string>
+    <string name="wear_material_font_family_body4">google-sans-text</string>
+    <string name="wear_material_font_family_button1">google-sans-text-medium</string>
+    <string name="wear_material_font_family_button2">google-sans-text</string>
+    <string name="wear_material_font_family_caption1">google-sans-text-medium</string>
+    <string name="wear_material_font_family_caption2">google-sans-text-medium</string>
+    <string name="wear_material_font_family_caption3">google-sans-text-medium</string>
+    <string name="wear_material_font_family_display1">google-sans</string>
+    <string name="wear_material_font_family_display2">google-sans</string>
+    <string name="wear_material_font_family_display3">google-sans</string>
+    <string name="wear_material_font_family_display4">google-sans</string>
+    <string name="wear_material_font_family_medium">google-sans-medium</string>
+    <string name="wear_material_font_family_title1">google-sans-medium</string>
+    <string name="wear_material_font_family_title2">google-sans-medium</string>
+    <string name="wear_material_font_family_title3">google-sans-medium</string>
+    <string name="font_family_regular">sans-serif-condensed</string>
+
 </resources>

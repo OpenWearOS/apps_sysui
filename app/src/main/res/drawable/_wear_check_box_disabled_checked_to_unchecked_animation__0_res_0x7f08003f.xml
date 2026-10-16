@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@anim/wear_selection_easing_incoming_80"
+        android:duration="@integer/wear_selection_default_anim_duration_ms"
+        android:valueFrom="?attr/wearSelectionDisabledColorSelected"
+        android:valueTo="?attr/wearSelectionDisabledColorUnselected"
+        android:valueType="colorType"
+        android:propertyName="fillColor"/>
+</set>

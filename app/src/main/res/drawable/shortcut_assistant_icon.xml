@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:demoButtonKeyCode="@integer/key_code_stem_primary"
+    app:screenContent="@drawable/ic_assistant_button_tip_screen"
+    app:tutorialShortcutPressAction="SINGLE_PRESS"
+    class="com.google.android.clockwork.sysui.common.hintoverlay.tutorialoverlays.ButtonShortcutDrawable"/>

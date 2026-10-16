@@ -2,66 +2,60 @@ package io.github.openwearos.sysui.ui;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.graphics.Color;
+import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.RippleDrawable;
 import android.util.AttributeSet;
-import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.FrameLayout;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class WearCircularButton extends FrameLayout {
+import io.github.openwearos.sysui.R;
+
+public class WearCircularButton extends WearButton {
 	public enum Size {
-		XSMALL(32, 16),
-		SMALL(40, 20),
-		STANDARD(52, 24),
-		LARGE(64, 28);
+		XSMALL(R.dimen.wear_circular_button_diameter_xsmall, R.dimen.wear_circular_button_icon_size_xsmall),
+		SMALL(R.dimen.wear_circular_button_diameter_small, R.dimen.wear_circular_button_icon_size_small),
+		STANDARD(R.dimen.wear_circular_button_diameter_standard, R.dimen.wear_circular_button_icon_size_standard),
+		LARGE(R.dimen.wear_circular_button_diameter_large, R.dimen.wear_circular_button_icon_size_large);
 
-		final int diameterDp;
-		final int iconDp;
+		final int diameterRes;
+		final int iconRes;
 
-		Size(int diameterDp, int iconDp) {
-			this.diameterDp = diameterDp;
-			this.iconDp = iconDp;
+		Size(int diameterRes, int iconRes) {
+			this.diameterRes = diameterRes;
+			this.iconRes = iconRes;
 		}
 	}
 
-	private static final int DEFAULT_FILL = Ui.ACCENT;
-	private static final int DEFAULT_ICON = 0xFF00201D;
-	private static final float DISABLED_ALPHA = 0.38f;
-
-	private final GradientDrawable mFill = new GradientDrawable();
-	private final ImageView mIcon;
-	private Size mSize = Size.STANDARD;
+	private int mDiameterRes = Size.STANDARD.diameterRes;
+	private int mIconSizeRes = Size.STANDARD.iconRes;
 
 	public WearCircularButton(Context context) {
 		this(context, null);
 	}
 
 	public WearCircularButton(Context context, AttributeSet attrs) {
-		this(context, attrs, 0);
+		this(context, attrs, R.attr.wearCircularButtonStyle);
 	}
 
 	public WearCircularButton(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
-		mFill.setShape(GradientDrawable.OVAL);
-		mFill.setColor(DEFAULT_FILL);
-		GradientDrawable mask = new GradientDrawable();
-		mask.setShape(GradientDrawable.OVAL);
-		mask.setColor(Color.BLACK);
-		setBackground(new RippleDrawable(ColorStateList.valueOf(0x33FFFFFF), mFill, mask));
+		mDefaultIconTint = stateList(
+				themeColor(context, R.attr.colorPrimary, 0xFFFFFFFF),
+				themeColor(context, R.attr.colorOnPrimary, 0xFF000000));
+		inflateContent();
+		initFromAttributes(attrs, defStyleAttr);
 
-		mIcon = new ImageView(context);
-		mIcon.setScaleType(ImageView.ScaleType.FIT_CENTER);
-		mIcon.setImageTintList(ColorStateList.valueOf(DEFAULT_ICON));
-		mIcon.setImportantForAccessibility(IMPORTANT_FOR_ACCESSIBILITY_NO);
-		addView(mIcon, new LayoutParams(0, 0, Gravity.CENTER));
-		applyIconSize();
-
-		setClickable(true);
-		setFocusable(true);
+		TypedArray a = context.obtainStyledAttributes(
+				attrs, R.styleable.WearCircularButton, defStyleAttr, R.style.WearCircularButtonDefault);
+		try {
+			int ordinal = a.getInt(R.styleable.WearCircularButton_size, Size.STANDARD.ordinal());
+			Size[] sizes = Size.values();
+			setSize(sizes[Math.max(0, Math.min(sizes.length - 1, ordinal))]);
+		} finally {
+			a.recycle();
+		}
 	}
 
 	public WearCircularButton(Context context, Size size, Drawable icon, Runnable onTap) {
@@ -71,55 +65,33 @@ public class WearCircularButton extends FrameLayout {
 		setOnClickListener(v -> onTap.run());
 	}
 
-	public void setSize(Size size) {
-		if (size == mSize)
-			return;
-		mSize = size;
-		applyIconSize();
-		requestLayout();
+	protected void inflateContent() {
+		LayoutInflater.from(getContext()).inflate(R.layout.wear_circular_button_layout, this, true);
+		mIcon = findViewById(R.id.icon);
 	}
 
-	public Size getSize() {
-		return mSize;
+	public final void setSize(Size size) {
+		setSizeResources(size.diameterRes, size.iconRes);
 	}
 
-	public void setIcon(Drawable icon) {
-		mIcon.setImageDrawable(icon);
+	public final void setSizeResources(int diameterRes, int iconSizeRes) {
+		mDiameterRes = diameterRes;
+		mIconSizeRes = iconSizeRes;
+		onIconSizeChanged();
 	}
 
-	public void setIconResource(int resId) {
-		mIcon.setImageResource(resId);
-	}
-
-	public Drawable getIcon() {
-		return mIcon.getDrawable();
-	}
-
-	public void setButtonColor(int color) {
-		mFill.setColor(color);
-	}
-
-	public void setIconColor(int color) {
-		mIcon.setImageTintList(ColorStateList.valueOf(color));
-	}
-
-	@Override
-	public void setEnabled(boolean enabled) {
-		super.setEnabled(enabled);
-		setAlpha(enabled ? 1f : DISABLED_ALPHA);
-	}
-
-	private void applyIconSize() {
-		int px = Ui.dp(getContext(), mSize.iconDp);
-		LayoutParams lp = (LayoutParams) mIcon.getLayoutParams();
+	protected void onIconSizeChanged() {
+		int px = pixels(mIconSizeRes);
+		ViewGroup.LayoutParams lp = mIcon.getLayoutParams();
 		lp.width = px;
 		lp.height = px;
 		mIcon.setLayoutParams(lp);
+		requestLayout();
 	}
 
 	@Override
 	protected void onMeasure(int widthSpec, int heightSpec) {
-		int diameter = Ui.dp(getContext(), mSize.diameterDp);
+		int diameter = pixels(mDiameterRes);
 		int side = Math.min(fit(diameter, widthSpec), fit(diameter, heightSpec));
 		int exact = MeasureSpec.makeMeasureSpec(side, MeasureSpec.EXACTLY);
 		super.onMeasure(exact, exact);
@@ -135,5 +107,43 @@ public class WearCircularButton extends FrameLayout {
 			default:
 				return wanted;
 		}
+	}
+
+	@Override
+	protected void onIconResource(int resId) {
+		if (resId != 0)
+			mIcon.setImageResource(resId);
+	}
+
+	public void setIcon(Drawable icon) {
+		mIcon.setImageDrawable(icon);
+	}
+
+	public void setIconResource(int resId) {
+		mIcon.setImageResource(resId);
+	}
+
+	public final Drawable getIcon() {
+		return mIcon.getDrawable();
+	}
+
+	public final ImageView getIconView() {
+		return mIcon;
+	}
+
+	public final void setButtonColor(int color) {
+		setButtonBackgroundTint(ColorStateList.valueOf(color));
+	}
+
+	public final void setIconColor(int color) {
+		setIconTint(ColorStateList.valueOf(color));
+	}
+
+	public final Size getSize() {
+		for (Size s : Size.values()) {
+			if (s.diameterRes == mDiameterRes)
+				return s;
+		}
+		return null;
 	}
 }

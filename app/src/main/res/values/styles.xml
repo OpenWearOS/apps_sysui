@@ -358,7 +358,7 @@
         <item name="android:windowAnimationStyle">@style/Animation.AppCompat.Dialog</item>
         <item name="android:listDivider">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:windowSoftInputMode">0x20</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
@@ -389,7 +389,7 @@
         <item name="titleTextAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionBar" parent="">
-        <item name="android:gravity">0x10</item>
+        <item name="android:gravity">center_vertical</item>
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
         <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
         <item name="background">@null</item>
@@ -437,7 +437,7 @@
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
     </style>
     <style name="Base.Widget.AppCompat.ActivityChooserView" parent="">
-        <item name="android:gravity">0x11</item>
+        <item name="android:gravity">center</item>
         <item name="android:background">@drawable/abc_ab_share_pack_mtrl_alpha</item>
         <item name="divider">?attr/dividerVertical</item>
         <item name="dividerPadding">6dp</item>
@@ -491,8 +491,8 @@
     <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="@android:style/Widget.Material.DropDownItem.Spinner">
     </style>
     <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
-        <item name="android:breakStrategy">0</item>
-        <item name="android:hyphenationFrequency">0</item>
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
     </style>
     <style name="Base.Widget.AppCompat.ImageButton" parent="@android:style/Widget.Material.ImageButton">
     </style>
@@ -557,8 +557,8 @@
     <style name="Base.Widget.AppCompat.Spinner" parent="@android:style/Widget.Material.Spinner">
     </style>
     <style name="Base.Widget.AppCompat.TextView" parent="@android:style/Widget.Material.TextView">
-        <item name="android:breakStrategy">1</item>
-        <item name="android:hyphenationFrequency">0</item>
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
     </style>
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="@android:style/Widget.Material.TextView.SpinnerItem">
     </style>
@@ -567,7 +567,7 @@
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="@android:style/Widget.Material.Toolbar.Button.Navigation">
     </style>
     <style name="BasePreferenceThemeOverlay" parent="">
-        <item name="android:scrollbars">0x200</item>
+        <item name="android:scrollbars">none</item>
         <item name="checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference.Material</item>
         <item name="dialogPreferenceStyle">@style/Preference.DialogPreference.Material</item>
         <item name="dropdownPreferenceStyle">@style/Preference.DropDown.Material</item>
@@ -619,45 +619,40 @@
         <item name="size">standard</item>
     </style>
     <style name="DefaultTutorialTheme" parent="">
-        <item name="tutorial_crown_press_to_apps_lottie">@raw/button_tip_watchface_to_launcher</item>
-        <item name="tutorial_crown_press_to_watchface_lottie">@raw/button_tip_tutorial_to_watchface</item>
         <item name="tutorial_extra_tips_descriptions">@array/default_extra_tips_descriptions</item>
         <item name="tutorial_extra_tips_icons">@array/default_extra_tips_icons</item>
-        <item name="tutorial_logo_icon">@drawable/ic_logo_wear_os_48dp</item>
-        <item name="tutorial_side_button_press_to_recent_apps_lottie">@raw/button_tip_watchface_to_recents</item>
+        <item name="tutorial_logo_icon">@drawable/ic_nyawach</item>
     </style>
     <style name="ErrorTextAppearanceWearButton" parent="@style/PrimaryTextAppearanceWearButton">
         <item name="android:textSize">13sp</item>
-        <item name="android:textStyle">0x1</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/wear_material_white</item>
-        <item name="android:gravity">0x800003</item>
+        <item name="android:gravity">start</item>
     </style>
     <style name="FirstPartyTutorialTheme" parent="@style/DefaultTutorialTheme">
         <item name="tutorial_extra_tips_descriptions">@array/extra_tips_descriptions</item>
         <item name="tutorial_extra_tips_icons">@array/extra_tips_icons</item>
-        <item name="tutorial_logo_icon">@drawable/ic_google_logo</item>
+        <item name="tutorial_logo_icon">@drawable/ic_nyawach</item>
     </style>
     <style name="FirstPartyTutorialTheme.Ios" parent="@style/FirstPartyTutorialTheme">
         <item name="tutorial_extra_tips_descriptions">@array/extra_tips_descriptions_ios</item>
         <item name="tutorial_extra_tips_icons">@array/extra_tips_icons_ios</item>
-        <item name="tutorial_logo_icon">@drawable/ic_google_logo</item>
+        <item name="tutorial_logo_icon">@drawable/ic_nyawach</item>
     </style>
     <style name="FirstPartyTutorialTheme.Ios.WalletAvailable" parent="@style/FirstPartyTutorialTheme.Ios">
         <item name="tutorial_extra_tips_descriptions">@array/extra_tips_descriptions_ios_wallet</item>
         <item name="tutorial_extra_tips_icons">@array/extra_tips_icons_ios_wallet</item>
-        <item name="tutorial_logo_icon">@drawable/ic_google_logo</item>
+        <item name="tutorial_logo_icon">@drawable/ic_nyawach</item>
     </style>
     <style name="FirstPartyTutorialTheme.WalletAvailable" parent="@style/FirstPartyTutorialTheme">
         <item name="tutorial_extra_tips_descriptions">@array/extra_tips_descriptions_wallet</item>
         <item name="tutorial_extra_tips_icons">@array/extra_tips_icons_wallet</item>
-        <item name="tutorial_logo_icon">@drawable/ic_google_logo</item>
+        <item name="tutorial_logo_icon">@drawable/ic_nyawach</item>
     </style>
     <style name="FullViewNotificationScrimView" parent="">
-        <item name="android:layout_width">-1</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">@dimen/full_view_edge_arrow_height</item>
-        <item name="android:scaleType">3</item>
-        <item name="lottie_loop">false</item>
-        <item name="lottie_rawRes">@raw/full_view_arrow</item>
+        <item name="android:scaleType">fitCenter</item>
     </style>
     <style name="FullViewNotificationTheme" parent="@style/SysUiTheme">
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -668,22 +663,22 @@
         <item name="android:textColor">@color/wear_material_system_white</item>
     </style>
     <style name="GoogleMediaControlInstructionTextAppearance" parent="@style/GoogleMediaSubtitleTextAppearance">
-        <item name="android:ellipsize">3</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:maxLines">2</item>
         <item name="android:singleLine">false</item>
-        <item name="android:requiresFadingEdge">0x0</item>
+        <item name="android:requiresFadingEdge">none</item>
     </style>
     <style name="GoogleMediaSubtitleTextAppearance" parent="@style/Widget.TextView.WearMaterial.Body4">
         <item name="android:textColor">?attr/colorOnSurface</item>
-        <item name="android:ellipsize">3</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:fadingEdgeLength">14dp</item>
         <item name="android:singleLine">true</item>
-        <item name="android:requiresFadingEdge">0x1000</item>
+        <item name="android:requiresFadingEdge">horizontal</item>
     </style>
     <style name="GoogleMediaTitleTextAppearance" parent="@style/Widget.TextView.WearMaterial.Button2">
         <item name="android:textColor">?attr/colorOnSurface</item>
-        <item name="android:ellipsize">0</item>
-        <item name="android:gravity">0x11</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
         <item name="android:focusable">true</item>
         <item name="android:focusableInTouchMode">true</item>
         <item name="android:fadingEdgeLength">14dp</item>
@@ -710,24 +705,24 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
-    <style name="LicenseMaterialTheme" parent="@style/WearMaterialTheme.Dynamic">
-        <item name="licenseColorOnPrimary">?attr/colorOnPrimary</item>
-        <item name="licenseColorOnSurface">?attr/colorOnSurface</item>
-        <item name="licenseColorPrimary">?attr/colorPrimary</item>
-        <item name="licenseColorSurface">?attr/colorSurface</item>
-        <item name="licenseColorTitle">@color/wear_material_gray_400</item>
-        <item name="licenseTextStyleWearBody4">?attr/textStyleWearBody4</item>
-        <item name="licenseTextStyleWearButton1">?attr/textStyleWearButton1</item>
-    </style>
+<!--    <style name="LicenseMaterialTheme" parent="@style/WearMaterialTheme.Dynamic">-->
+<!--        <item name="licenseColorOnPrimary">?attr/colorOnPrimary</item>-->
+<!--        <item name="licenseColorOnSurface">?attr/colorOnSurface</item>-->
+<!--        <item name="licenseColorPrimary">?attr/colorPrimary</item>-->
+<!--        <item name="licenseColorSurface">?attr/colorSurface</item>-->
+<!--        <item name="licenseColorTitle">@color/wear_material_gray_400</item>-->
+<!--        <item name="licenseTextStyleWearBody4">?attr/textStyleWearBody4</item>-->
+<!--        <item name="licenseTextStyleWearButton1">?attr/textStyleWearButton1</item>-->
+<!--    </style>-->
     <style name="ManagementUiAddButton" parent="@style/WearCircularButtonDefault">
         <item name="buttonBackgroundColor">?attr/colorPrimary</item>
         <item name="buttonIconTint">?attr/colorOnPrimary</item>
     </style>
     <style name="ManagementUiErrorTextAppearanceWearButton" parent="@style/PrimaryTextAppearanceWearButton">
         <item name="android:textSize">13sp</item>
-        <item name="android:textStyle">0x1</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/wear_material_white</item>
-        <item name="android:gravity">0x800003</item>
+        <item name="android:gravity">start</item>
     </style>
     <style name="ManagementUiRearrangeButton" parent="@style/WearCircularButtonDefault">
         <item name="buttonIconTint">?attr/colorPrimary</item>
@@ -912,7 +907,7 @@
     <style name="PreferenceThemeOverlay.WearMaterial" parent="@style/Base.V33.PreferenceThemeOverlay.WearMaterial">
     </style>
     <style name="PrimaryTextAppearanceWearButton" parent="@style/TextAppearance.WearMaterial.Button1">
-        <item name="android:textColor">@color/wear_button_text_stateful</item>
+<!--        <item name="android:textColor">@color/wear_button_text_stateful</item>-->
     </style>
     <style name="PrimaryTextAppearanceWearButtonSmall" parent="@style/SecondaryTextAppearanceWearButton">
         <item name="android:textSize">@dimen/wear_material_default_text_size_caption1_dp</item>
@@ -936,14 +931,14 @@
     <style name="RemoteActionConfirmationThemeOverlay.Dialog" parent="@android:style/ThemeOverlay.Material.Dialog">
         <item name="android:windowSwipeToDismiss">true</item>
     </style>
-    <style name="RetailTheme" parent="@style/WearMaterialThemeDefault">
-        <item name="retailBatterySaverIconColor">?attr/colorSecondaryCompat</item>
-        <item name="retailBrightnessIconColor">?attr/colorSecondaryCompat</item>
-        <item name="retailDndIconColor">?attr/colorSecondaryCompat</item>
-        <item name="retailSettingsIconColor">?attr/colorSecondaryCompat</item>
-        <item name="retailTheaterModeIconColor">?attr/colorSecondaryCompat</item>
-        <item name="retailTouchLockIconColor">?attr/colorSecondaryCompat</item>
-    </style>
+<!--    <style name="RetailTheme" parent="@style/WearMaterialThemeDefault">-->
+<!--        <item name="retailBatterySaverIconColor">?attr/colorSecondaryCompat</item>-->
+<!--        <item name="retailBrightnessIconColor">?attr/colorSecondaryCompat</item>-->
+<!--        <item name="retailDndIconColor">?attr/colorSecondaryCompat</item>-->
+<!--        <item name="retailSettingsIconColor">?attr/colorSecondaryCompat</item>-->
+<!--        <item name="retailTheaterModeIconColor">?attr/colorSecondaryCompat</item>-->
+<!--        <item name="retailTouchLockIconColor">?attr/colorSecondaryCompat</item>-->
+<!--    </style>-->
     <style name="RsbControlDefault" parent="@android:style/Widget">
         <item name="color">?attr/colorPrimary</item>
     </style>
@@ -951,7 +946,7 @@
         <item name="android:textAlignment">5</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="@android:style/Widget">
-        <item name="android:layout_gravity">0x800013</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
         <item name="android:paddingEnd">8dp</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem" parent="@android:style/Widget">
@@ -996,7 +991,7 @@
         <item name="android:layout_marginStart">@dimen/abc_dropdownitem_text_padding_left</item>
     </style>
     <style name="SecondaryTextAppearanceWearButton" parent="@style/TextAppearance.WearMaterial.Caption1">
-        <item name="android:textColor">@color/wear_button_secondary_text_stateful</item>
+<!--        <item name="android:textColor">@color/wear_button_secondary_text_stateful</item>-->
     </style>
     <style name="SysUiTheme" parent="@style/WearMaterialThemeDefault">
         <item name="android:textAppearanceLarge">@style/WearText.Subhead</item>
@@ -1085,7 +1080,7 @@
     </style>
     <style name="TextAppearance.WearMaterial.Button2" parent="@style/TextAppearance.WearMaterial">
         <item name="android:textSize">?attr/textSizeWearButton2</item>
-        <item name="android:textStyle">0x1</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">?attr/fontFamilyWearButton2</item>
         <item name="android:letterSpacing">?attr/letterSpacingWearButton2</item>
     </style>
@@ -1138,7 +1133,7 @@
     </style>
     <style name="TextAppearance.WearMaterial.Static.Body4" parent="@style/TextAppearance.WearMaterial.Static">
         <item name="android:textSize">@dimen/wear_material_text_size_body4</item>
-        <item name="android:fontFamily">@string/wear_material_font_family_body4</item>
+<!--        <item name="android:fontFamily">@string/wear_material_font_family_body4</item>-->
         <item name="android:letterSpacing">@fraction/wear_material_tracking_body4</item>
     </style>
     <style name="TextAppearance.WearMaterial.Title1" parent="@style/TextAppearance.WearMaterial">
@@ -1257,7 +1252,7 @@
     </style>
     <style name="WearChipButtonAccent.Checkable" parent="@style/WearChipButtonAccent">
         <item name="android:checkable">true</item>
-        <item name="buttonBackgroundColor">@color/wear_chip_button_checkable_background</item>
+<!--        <item name="buttonBackgroundColor">@color/wear_chip_button_checkable_background</item>-->
     </style>
     <style name="WearChipButtonAvatar" parent="@style/WearChipButtonDefault">
         <item name="iconAndTextPadding">@dimen/wear_button_start_padding_avatar</item>
@@ -1304,8 +1299,8 @@
     </style>
     <style name="WearCircularButtonDefault" parent="@style/WearButtonDefault">
         <item name="android:background">@drawable/wear_image_button_background</item>
-        <item name="buttonBackgroundColor">@color/wear_circular_button_background</item>
-        <item name="buttonIconTint">@color/wear_circular_button_icon</item>
+<!--        <item name="buttonBackgroundColor">@color/wear_circular_button_background</item>-->
+<!--        <item name="buttonIconTint">@color/wear_circular_button_icon</item>-->
     </style>
     <style name="WearCircularButtonSecondary" parent="@style/WearCircularButtonDefault">
         <item name="android:background">@drawable/wear_image_button_transparent</item>
@@ -1731,12 +1726,12 @@
         <item name="wearToggleStyle">@style/WearToggleDefault</item>
     </style>
     <style name="WearPickerActionButton" parent="@style/WearCircularButtonDefault">
-        <item name="buttonIconTint">@color/wear_picker_action_button_icon</item>
+<!--        <item name="buttonIconTint">@color/wear_picker_action_button_icon</item>-->
         <item name="size">small</item>
     </style>
     <style name="WearPickerColumnLabel" parent="@style/Widget.TextView.WearMaterial.Caption1">
         <item name="android:textColor">@color/wear_picker_text_color</item>
-        <item name="android:gravity">0x51</item>
+        <item name="android:gravity">center_horizontal|fill_vertical</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:includeFontPadding">false</item>
     </style>
@@ -1756,7 +1751,7 @@
     </style>
     <style name="WearPickerToggleText" parent="@style/Widget.TextView.WearMaterial.Button1">
         <item name="android:textColor">@color/wear_picker_text_color</item>
-        <item name="android:gravity">0x1</item>
+        <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@drawable/wear_picker_toggle_view</item>
         <item name="android:paddingLeft">@dimen/wear_picker_toggle_view_padding_horizontal</item>
         <item name="android:paddingTop">@dimen/wear_picker_toggle_view_padding_vertical</item>
@@ -1810,12 +1805,12 @@
     </style>
     <style name="WearText.Title" parent="@style/WearText">
         <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">0x1</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">google-sans</item>
     </style>
     <style name="WearTitleStyle" parent="">
         <item name="android:textAppearance">@style/WearText.Title</item>
-        <item name="android:ellipsize">3</item>
+        <item name="android:ellipsize">end</item>
         <item name="android:singleLine">true</item>
         <item name="android:shadowRadius">0</item>
         <item name="android:textAlignment">5</item>
@@ -1827,10 +1822,10 @@
         <item name="android:textColor">@color/primary_text_dark</item>
         <item name="android:background">#99000000</item>
         <item name="android:maxLines">2</item>
-        <item name="android:color">@color/circular_button</item>
+<!--        <item name="android:color">@color/circular_button</item>-->
         <item name="android:fontFamily">sans-serif-condensed-light</item>
         <item name="android:elevation">@dimen/circular_button_elevation</item>
-        <item name="android:stateListAnimator">@animator/circular_image_button_anim</item>
+<!--        <item name="android:stateListAnimator">@animator/circular_image_button_anim</item>-->
         <item name="buttonRippleColor">@color/circular_button_pressed</item>
         <item name="maxTextSize">20sp</item>
         <item name="minTextSize">12sp</item>

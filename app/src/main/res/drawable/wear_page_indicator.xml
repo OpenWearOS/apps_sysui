@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:margin="@dimen/wear_page_indicator_padding"
+    app:radius="@dimen/wear_page_indicator_radius"
+    app:selectedAlpha="@integer/wear_page_indicator_selected_alpha"
+    app:unselectedAlpha="@integer/wear_page_indicator_unselected_alpha"
+    class="com.google.android.clockwork.common.wearable.wearmaterial.pageindicator.WearPageIndicatorDrawable"/>
