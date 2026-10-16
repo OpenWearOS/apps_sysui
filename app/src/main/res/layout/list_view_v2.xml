@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false">
-    <io.github.openwearos.sysui.ui.time.WearTimeText
+    <io.github.openwearos.sysui.ui.WearTimeText
         android:gravity="center"
         android:id="@+id/scrolling_time_text"
         android:visibility="gone"

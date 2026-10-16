@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetTop="@dimen/app_chip_background_inset_top"
+    android:insetBottom="@dimen/app_chip_background_inset_bottom">
+    <ripple android:color="@color/wear_view_ripple_color_selector">
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/app_chip_background_corner_radius"/>
+                <solid android:color="?attr/colorSurface"/>
+            </shape>
+        </item>
+    </ripple>
+</inset>

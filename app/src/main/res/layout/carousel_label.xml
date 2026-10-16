@@ -11,7 +11,6 @@
         android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
         android:id="@+id/carousel_label_icon_container"
-        android:background="@drawable/carousel_label_background"
         android:paddingTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

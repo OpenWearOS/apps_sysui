@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.openwearos.sysui.ui.AllItemsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/managementui_all_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <io.github.openwearos.sysui.ui.HeaderFooterRecyclerViewLayout
+        android:id="@+id/managementui_all_items_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/managementui_all_items_header"/>
+        <view
+            android:id="@+id/managementui_all_list"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="yes"
+            class="io.github.openwearos.sysui.ui.AllItemsView$AllItemsRecyclerView"/>
+        <io.github.openwearos.sysui.ui.ButtonWithPercentPadding
+            android:gravity="center"
+            android:id="@+id/managementui_all_footer_button"
+            android:background="@null"
+            android:paddingTop="@dimen/managementui_more_btn_padding"
+            android:paddingBottom="@dimen/managementui_more_btn_padding_bottom"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/managementui_more_btn_padding"
+            android:textAllCaps="false"
+            style="@style/AddAllItemsFooterText"/>
+    </io.github.openwearos.sysui.ui.HeaderFooterRecyclerViewLayout>
+</io.github.openwearos.sysui.ui.AllItemsView>

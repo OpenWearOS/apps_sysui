@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.CurvedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="@style/TextAppearance.WearMaterial.Body3"
+    android:textSize="@dimen/managementui_all_list_title_non_scalable_text_size"
+    android:ellipsize="end"
+    android:id="@+id/managementui_all_title"
+    android:paddingTop="@dimen/managementui_all_title_min_vertical_padding"
+    android:paddingBottom="@dimen/managementui_all_list_title_bottom_padding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/management_all_items_title"
+    android:textAlignment="center"
+    app:maxSweepDegrees="@dimen/managementui_all_list_title_max_sweep_degree"/>

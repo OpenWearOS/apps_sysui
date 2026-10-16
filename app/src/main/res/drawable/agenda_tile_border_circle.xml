@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/action_button_circle_inset"
+    android:insetRight="@dimen/action_button_circle_inset"
+    android:insetTop="@dimen/action_button_circle_inset"
+    android:insetBottom="@dimen/action_button_circle_inset">
+    <shape android:shape="oval">
+        <solid android:color="@color/agenda_tile_button"/>
+    </shape>
+</inset>
