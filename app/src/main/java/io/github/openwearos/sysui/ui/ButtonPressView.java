@@ -71,11 +71,11 @@ public class ButtonPressView extends FrameLayout {
             if (HardwareButtons.position(getContext(), other) == null) continue;
             ImageView marker = new ImageView(getContext());
             marker.setImageDrawable(getResources().getDrawable(drawableFor(other), getContext().getTheme()));
-            marker.setRotation(angleDegrees(other));
+            marker.setRotation((float) angleDegrees(other));
             mStaticButtons.addView(marker);
         }
 
-        float angle = angleDegrees(keyCode);
+        float angle = (float) angleDegrees(keyCode);
         mPressAnimation.setImageDrawable(
                 getResources().getDrawable(drawableFor(keyCode), getContext().getTheme()));
         mPressAnimation.setRotation(angle);

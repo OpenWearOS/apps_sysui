@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:importantForAccessibility="no"
         android:translationZ="-1px"/>
-    <io.github.openwearos.sysui.ui.module.carousel.label.CarouselLabelView
+    <io.github.openwearos.sysui.ui.CarouselLabelView
         android:id="@+id/carousel_label"
         android:visibility="gone"
         android:layout_width="match_parent"

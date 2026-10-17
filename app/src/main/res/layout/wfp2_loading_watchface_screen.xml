@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <io.github.openwearos.sysui.ui.WearTimeText
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/watchface_picker_clock_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/managementui_item_name_curve_padding"
+        android:layout_marginRight="@dimen/managementui_item_name_curve_padding"
+        android:layout_marginBottom="@dimen/managementui_item_name_curve_padding"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_loading_watchface"/>
+    <TextView
+        android:textAppearance="?attr/textAppearanceWearButton1"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/watchface_picker_loading_text"
+        android:background="@drawable/bg_chip"
+        android:visibility="gone"
+        android:layout_width="@dimen/wfp2_loading_chip_fixed_width"
+        android:layout_height="@dimen/wfp2_loading_chip_fixed_height"
+        android:layout_marginBottom="@dimen/wfp2_loading_chip_margin_bottom"/>
+</FrameLayout>

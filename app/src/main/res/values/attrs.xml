@@ -983,12 +983,23 @@
     </attr>
     <attr name="spinnerTrackStartAngle" format="float">
     </attr>
+    <attr name="scrollSpeedFactor" format="float">
+    </attr>
+    <attr name="scrollDecelerationFactor" format="float">
+    </attr>
     <attr name="spinnerTrackWidth" format="dimension">
     </attr>
-    <attr name="screenContent" format="reference">
+    <attr name="screenContent" format="reference">bottomPaddingPercent
     </attr>
     <attr name="demoButtonKeyCode" format="integer">
     </attr>
-
+    <attr name="ambient" format="boolean"/>
+    <attr name="lowBitAmbient" format="boolean"/>
+    <attr name="showEmptySweepAngle" format="boolean"/>
+    <attr name="centerEdgeItems" format="boolean"/>
+    <attr name="bottomPaddingPercent" format="dimension">
+    </attr>
+    <attr name="topPaddingPercent" format="dimension">
+    </attr>
 
 </resources>

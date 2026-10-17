@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:importantForAccessibility="no"/>
-    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+    <io.github.openwearos.sysui.ui.AmbientableTextView
         android:layout_gravity="center_horizontal"
         android:id="@+id/relative_day_header_no_event"
         android:visibility="gone"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/list_view_v2_day_header_margin_top"
         style="@style/AgendaText.EventText.Header"/>
-    <io.github.openwearos.sysui.ui.common.views.ambient.AmbientableTextView
+    <io.github.openwearos.sysui.ui.AmbientableTextView
         android:textColor="?attr/colorSurfaceVariant"
         android:gravity="center"
         android:layout_gravity="center"

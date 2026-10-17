@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <io.github.openwearos.sysui.ui.AmbientableTextView
+        android:id="@+id/event_time_absolute"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        style="@style/AgendaText.EventText.Time"/>
+    <io.github.openwearos.sysui.ui.AmbientableTextView
+        android:id="@+id/event_time_relative"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        style="@style/AgendaText.EventText.Time"/>
+</merge>

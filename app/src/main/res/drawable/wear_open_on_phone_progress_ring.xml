@@ -8,4 +8,4 @@
     app:spinnerTrackEndAngle="@integer/wear_alertdialog_countdown_progress_ring_end_angle"
     app:spinnerTrackStartAngle="@integer/wear_alertdialog_countdown_progress_ring_start_angle"
     app:spinnerTrackWidth="@dimen/wear_alertdialog_countdown_progress_ring_track_width"
-    class="com.google.android.clockwork.common.wearable.wearmaterial.progressindicator.ProgressSpinnerDrawable"/>
+    class="io.github.openwearos.sysui.ui.ProgressSpinnerDrawable"/>
